@@ -1,0 +1,132 @@
+/* Reset CSS
+   ========================================================================== */
+   html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body{font-family: Arial, Helvetica, sans-serif; font-size: 16px; color: #3A3A3A; line-height: 1.5;}
+img{max-width: 100%;}
+a, .btn{transition: all 2s ease; -webkit-transition: all 2s ease;}
+p+p{margin-top: 20px;}
+
+@media all and (max-width:1199px){
+  .container{max-width: inherit; width:100%;}
+}
+   
+/* Common CSS
+    ========================================================================== */
+h1,h2,h3,h4,h5,h6{font-weight: 700;}
+h1{font-size: 24px; margin-bottom: 20px;}
+h2{font-size: 18px;}
+ol, ul { list-style: none; }
+a, .btn { transition: all 0.5s ease; }
+a:active, a:hover, a:focus, .btn:focus, .btn:active, .btn:hover { outline: 0; }
+
+a { color: #326277; text-decoration: none; }
+a:focus, a:hover { color: #333333; text-decoration: none; }
+
+.btn-sml{height: 26px; font-size: 14px; padding: 0 10px; line-height: 26px;}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus,.btn-primary:focus{box-shadow: none;}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle, .btn-primary:focus{background-color: #379BF2; border-color: #379BF2; color: #fff;}
+
+.btn-gray, .btn-gray:hover, .btn-gray:focus{background-color: #DEDEDE; color: #fff;}
+
+header, footer{background-color: #f0f0f0; padding:10px 0;}
+header{border-bottom: 1px #DEDEDE solid;}
+.product,.contactPerson{margin-bottom: 30px;}
+.product img{display: block; height: 250px; width: 100%; object-fit: cover;}
+.product h2 a, .productName{font-size: 14px; display: block; background-color: #356072; color:#fff; padding: 10px; text-align: center;}
+
+footer{border-top: 1px #DEDEDE solid;}
+.footeritem{min-width: 120px; text-align: center; font-size: 12px; font-weight: bold;}
+.footeritem img{display: block; margin: 0 auto;}
+.footeritem span{display: block; padding-top: 8px;}
+
+.toparrows > a{background-color: #356072; border-radius:5px; display: inline-block; padding: 5px; width: 36px; height: 36px;}
+.toparrows{border-bottom: 1px #DEDEDE solid;}
+.prodDetails{background-color: #fafafa; border: 1px #dedede solid; padding: 5px;}
+.prodDetails.cnterSection{border-right:none; border-left: none;}
+.prodDetails label{display: block; font-size:15px; color:#7E7E7E; font-weight: bold;}
+.prodDetails span{font-size: 18px; font-weight: bold; color: #26AA00;}
+.cnterSection{background-color: #F1F1F1;}
+.heading{background-color: #FAFAFA; border:1px #DEDEDE solid; font-size: 16px; color: #0587A8; padding:10px; text-align: center;}
+.bulleted{padding-left:20px; margin: 10px 0; list-style: disc; }
+.rtlcontent{direction: rtl; text-align: right; padding-right: 20px;}
+
+.num{position: absolute; background-color: rgba(0,0,0,0.7); z-index: 1; font-size: 20px; color: #fff; padding: 5px 10px;}
+.share{position: absolute; z-index: 2; bottom: 5px; right: 15px;}
+.carousel-control-prev-icon, 
+.carousel-control-next-icon{border-radius:5px; display: inline-block; padding: 5px; width: 40px; height: 50px; background-color: rgba(0,0,0,0.7); background-size: 12px 21px; background-position: center;}
+.carousel-control-prev-icon{background-image: url(/img/frontend/l-arrow.svg); border-bottom-left-radius: 0; border-top-left-radius: 0;margin-left: -38px;}
+.carousel-control-next-icon{background-image: url(/img/frontend/r-arrow.svg);border-bottom-right-radius: 0; border-top-right-radius: 0; margin-right: -38px;}
+
+.mainTitle{font-size: 20px; color: #356072;}
+.frame{background-color: #fafafa; border: 1px #dedede solid; padding: 10px; border-radius: 10px;}
+.btns .btn{width: 48%;}
+.contactPerson h3{color: #356072; font-size: 14px;}
+.userPic{height: 110px; width:110px; object-fit: cover;}
+
+  .pagination li a  {position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;}
+    .pagination li.active a{
+    	z-index: 1;
+	    color: #fff;
+	    background-color: #007bff;
+	    border-color: #007bff;
+    }
+    .pagination li.disabled a{
+     color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+    }
+	.carousel-item img{width: 100%; height: 520px; object-fit: cover;}
+	.fa-facebook-official{color: #4064ad;}
+	.fa-twitter-square{color: #1c9deb;}
+	.fa-linkedin-square{color: #2464ae;}
+	.fa-pinterest-square{color:#e00018;}
+	.shareMedia a{display: inline-block; margin: 5px;}
+	.shareMedia .fa{font-size: 25px;}
+
+@media all and (min-width:575px){
+    .footeritem{min-width: 170px;}
+}
+
+@media all and (max-width: 992px){
+	.product img{height: 200px;}
+	.carousel-item img{height: 350px;}
+}
+
+
+@media all and (max-width: 400px){
+	.product img{height: 120px;}
+	.carousel-item img{height: 290px;}
+}
+.datepicker-days thead th{background: #356072;color: #fff;text-align:center;font-size:25px;font-weight:700;padding: 15px 0;}
+.datepicker-days .day{font-size:16px;background-color:#ECF0F1;text-align:center;padding: 6px 26px;border:2px solid #fff;}
+.datepicker-days .active.day{background: #DC3131 !important;color: #fff;}
+.datepicker-days .day.old {color: #C2C2C2;}
+@media all and (max-width:767px){
+    header h2{font-size:15px;}
+    .datepicker-days .day{font-size:13px;padding: 6px 5px;}
+}
+
+/*.calendar-box{position: relative !important;}*/
+@media all and (max-width: 640px){
+   #select-delivery-date-input .datepicker-days thead th{font-size: 18px;}
+   .prodDetails label{font-size:14px; }
+   .prodDetails span{font-size: 16px;}
+}
+
+body > .dropdown-menu{display: none!important;}
+#select-delivery-date-input table.table-condensed{width:100%;}
+/*#select-delivery-date-input .datepicker-days .table-condensed thead{background-color: #356072;}*/
+#select-delivery-date-input .datepicker-days table.table-condensed{background-color: #356072;}
